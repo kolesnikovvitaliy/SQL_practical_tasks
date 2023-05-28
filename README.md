@@ -1,5 +1,5 @@
 # Прошел курсы повышения квалификации
-## В Дальневостоочном федераальном университеете:
+## В Дальневосточном федеральном университете:
 * #### по специальности  "Специалист-SQL" 
 * #### в репозитории "education_certificates" расположенно свидетельство о повышении квалификации
 #
@@ -115,7 +115,7 @@ WHERE buy_id = 5
 ```
 * Сообщение покупателю
 ```sql
-SELECT CONCAT(name_client, '! Извините, ', LCASE(name_step), ' вашего заказа задерживается :(') apologies
+SELECT CONCAT(name_client, '! Извините, ', LCASE(name_step), ' ваш заказ задерживается :(') apologies
   FROM step
        JOIN buy_step USING(step_id)
        JOIN buy USING(buy_id)
