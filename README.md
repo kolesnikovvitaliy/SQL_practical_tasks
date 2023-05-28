@@ -148,7 +148,7 @@ SELECT student_name AS Студент, less AS Шаг, rang AS Номер_поп
 FROM get_stat
 ORDER BY step_id, 3;
 ```
-* Отменить или перенести заказ в соответсвии с датой изменения условий выполнеия услуг
+* Отменить или перенести заказ в соответсвии с датой изменения условий выполнения услуг
 ```sql
 WITH
 get_first_date(service_booking_id, first_date)
