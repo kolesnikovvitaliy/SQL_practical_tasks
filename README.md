@@ -201,7 +201,7 @@ WHERE service_id = 5 AND status_id = 1
 ORDER BY 5 DESC, 4, 1
 LIMIT 10
 ```
-* Итоговый счет клиенту при веселении из гостинници, с учетом всех услуг и расходов
+* Итоговый счет клиенту при выселении из гостинници, с учетом всех услуг и расходов
 ```sql
 WITH get_result_concat_1(room_booking_id, result_room, result_room_price)
 AS(
@@ -235,7 +235,7 @@ SELECT "Итого", sum(result_all_price)
 FROM concat_all
 
 ```
-* Коофециент продаж книг разного жанра
+* Коофициент продаж книг разного жанра
 ```sql
 WITH get_amount(book_id, available_numbers)
 AS(
@@ -290,7 +290,7 @@ JOIN book USING(book_id)
 JOIN genre USING(genre_id)
 ORDER BY 3 DESC,  1
 ```
-* Выбратть книги всех авторов с минимальным количеством на складе и максимальной ценой
+* Выбрать книги всех авторов с минимальным количеством на складе и максимальной ценой
 ```sql
 CREATE TABLE store
 WITH get_book(tit, auth)
