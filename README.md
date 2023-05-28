@@ -125,7 +125,7 @@ SELECT CONCAT(name_client, '! Извините, ', LCASE(name_step), ' ваше�
    AND date_step_end IS NULL;
 
 ```
-* 
+* Вывести студента и количество попыток сдачи экзамена
 ```sql
 SET @avg_time := (SELECT CEIL(AVG(submission_time - attempt_time))
 FROM step_student INNER JOIN student USING(student_id)
