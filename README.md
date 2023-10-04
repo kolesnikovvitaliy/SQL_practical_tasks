@@ -59,7 +59,7 @@ WHERE buy_book.buy_id=5
 ORDER BY book.title;
 SELECT * FROM buy_pay;
 ```
-* Оющий сет на оплату
+* Текущий счет на оплату
 ```sql
 CREATE TABLE buy_pay
 SELECT buy_book.buy_id, SUM(buy_book.amount) as Количество,SUM(book.price*buy_book.amount)  as Итого
